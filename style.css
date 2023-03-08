@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Share Tech Mono", monospace;
+  border: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff5ec;
+}
+
+#calculadora {
+  width: 300px;
+  height: fit-content;
+  background-color: #fde5d0;
+  padding: 25px 15px;
+  position: relative;
+  border-radius: 10px;
+  box-shadow: 2px 3px 6px #c8a68598, -1px -1px 6px #bc9b7b98;
+}
+
+.display input {
+  width: 100%;
+  padding: 10px;
+  text-align: right;
+  color: #e8a35f;
+  font-size: 35px;
+  background-color: #fff1e4db;
+  border-radius: 5px;
+  box-shadow: inset 1px 1px 6px #bc9b7b98, inset -4px -4px 5px #fff;
+}
+
+#calculadora .buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 12px;
+  margin-top: 35px;
+}
+
+#calculadora .buttons input[type="button"] {
+  font-size: 20px;
+  padding: 14px;
+  background-color: #fff1e4db;
+  color: #e8a35f;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 1.5px 1.5px 3px #c8a68598, -2.5px -2.5px 2px #fff;
+}
+
+#calculadora .buttons input[type="button"]:hover {
+  box-shadow: 2px 2px 2px #bc9b7b70, -1px -1px 2px #bc9b7b70;
+}
+
+input[type="button"]#equal {
+  grid-row: span 2;
+}
+
+input[type="button"][value="0"] {
+  grid-column: span 2;
+}
